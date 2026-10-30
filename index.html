@@ -87,8 +87,8 @@
     mapEl.setAttribute('role', 'group');
     mapEl.setAttribute('aria-label', 'Map of Iowa City parcels. Arrow keys pan, plus and minus zoom. A text version of the data is available from the Data table button.');
 
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://openstreetmap.org">OpenStreetMap</a>',
       subdomains: 'abcd', maxZoom: 18, minZoom: 12
     }).addTo(map);
     L.control.scale().addTo(map);
